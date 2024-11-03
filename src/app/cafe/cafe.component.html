@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <h1 class="titulo">El aroma Mágico</h1>
+    <img src="https://img.freepik.com/fotos-premium/banner-horizontal-taza-cafe-granos-cafe-espacio-copia-vista-superior-fondo-piedra-oscura_128650-1868.jpg?w=700" alt="Cafe" class="img-fluid">
+    <hr>
+    <div class="col-8">
+    <table class="table table-sm">
+      <thead >
+        <tr class="table-dark table-sm ">
+          <th class="h4">#</th>
+          <th class="h4">Nombre</th>
+          <th class="h4">Tipo</th>
+          <th class="h4">Región</th>
+        </tr>
+        <tr *ngFor="let c of cafes">
+          <td>
+            <dd><strong>{{c.id}}</strong></dd>
+          </td>
+          <td>
+            <dd>{{c.nombre}}</dd>
+          </td>
+          <td>
+            <dd>{{c.tipo}}</dd>
+          </td>
+          <td>
+            <dd>{{c.region}}</dd>
+          </td>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    </div>
+</div>
+<hr>
+<footer class="footer">
+      <p>&copy;Contact us: +57 3102105253 - info&#64;elaromamagico.com- &#64;elaromamagico</p>
+</footer>
